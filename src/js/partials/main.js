@@ -18,4 +18,14 @@ $(document).ready(function () {
         });
     }
   });
+
+  $(".slider").slick({
+    slidesToShow: 2,
+    rows: 2,
+    slidesToScroll: 2,
+    prevArrow: $(".slider_prev"),
+    nextArrow: $(".slider_next"),
+    dots: true,
+    dotsClass: "slider_dots",
+  });
 });
