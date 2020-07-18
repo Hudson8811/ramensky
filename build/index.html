@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <title>Тайтл</title>
-
-    <link rel="icon" href="favicon.ico" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link href="css/main.css" rel="stylesheet" />
   </head>
@@ -33,7 +35,7 @@
                 +7 (800) 775-37-26
               </a>
             </div>
-            <a href="#" class="header_link">Заказать звонок</a>
+            <a href="#" class="header_link call--js">Заказать звонок</a>
           </div>
         </div>
     
@@ -43,19 +45,21 @@
               <a class="header_menu_item" href="#"> О Компании</a>
             </li>
             <li>
-              <a class="header_menu_item" href="#">Цены на сваи</a>
+              <a class="header_menu_item js--move" href=".price">Цены на сваи</a>
             </li>
             <li>
-              <a class="header_menu_item" href="#">Услуги</a>
+              <a class="header_menu_item js--move" href=".services">Услуги</a>
             </li>
             <li>
-              <a class="header_menu_item" href="#">Акции</a>
+              <a class="header_menu_item js--move" href=".shares">Акции</a>
             </li>
             <li>
-              <a class="header_menu_item" href="#">Фото работ</a>
+              <a class="header_menu_item js--move" href=".slider_wrapper">
+                Фото работ
+              </a>
             </li>
             <li>
-              <a class="header_menu_item" href="#">Контакты</a>
+              <a class="header_menu_item js--move" href=".footer">Контакты</a>
             </li>
           </ul>
         </nav>
@@ -91,7 +95,7 @@
           площадь
         </h3>
     
-        <a href="#" class="scroll_btn next_scroll_btn">
+        <a href=".price" class="scroll_btn next_scroll_btn js--move">
           <img src="img/arrow.png" alt="icon" />
         </a>
       </div>
@@ -1649,7 +1653,7 @@
         </div>
       </div>
     
-      <a href="#" class="pt_btn"> Оставить заявку</a>
+      <a href="#" class="pt_btn call--js"> Оставить заявку</a>
     </div>
     <!--  -->
     <div class="schema">
@@ -1881,7 +1885,7 @@
           </div>
     
           <div class="footer_item">
-            <div class="header_link">Отправить заявку</div>
+            <div class="header_link call--js">Отправить заявку</div>
     
             <span class="footer_inc">
               © Раменский завод металлоконструкций 2020
@@ -1890,6 +1894,15 @@
         </div>
       </div>
     </footer>
+    <!--  -->
+    <div class="modal-fancy" id="modal1" style="display: none;">
+      <form>
+        <h2 class="modal_heading">Заказать звонок</h2>
+        <input type="text" placeholder="Имя" />
+        <input type="text" placeholder="Телефон" />
+        <button>Заказать</button>
+      </form>
+    </div>
     <script src="js/main.js"></script>
   </body>
 </html>
